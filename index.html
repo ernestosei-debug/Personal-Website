@@ -3,49 +3,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-    
-    <title>Ernest Osei</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap');
-    </style>
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<title>Ernest Osei</title>
+<link rel="stylesheet" href="stylesheet.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap');
+</style>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
-    <!--Babel CDN below-->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
+<!--Babel CDN below-->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
-    
     <div class="hyperlink">
-        <a href="#">Blog</a>
+        <a href="ernest-oseica.medium.com">Blog</a>
         <a href="#">About Me</a>
     </div>
 
     <div class="name">
-        <p>Hi. I'm Ernest Osei.</p>
+        <p>Hi, I'm Ernest Osei.</p>
     </div>
 
-<p style="font-size: 1.3rem;">
-Software Engineer Interested In:
-</p>
+    <p style="font-size: 1.3rem;">
+        Software Engineer Based In Toronto Canada.
+    </p>
 
-<ul style="font-size: 1rem;">
-    <li>Cloud Computing</li>
-    <li>Applied Mathematics</li>
-    <li>Distributed Systems</li>
-    <li>Agile Project Management</li>
-</ul>
+    <!--
+    <p>
+        My favourite programming languages are both over 30 years old; C++ and SQL.
+        <br></br>
+        This may be indicative of an appreciation for history and computers.
+    </p>
+    -->
 
-<p style="font-size: 12px" id="cp_notice"></p>
+    <p class="footer" id="cp_notice"></p>
 
-<script type="text/babel">
-   const footer = document.getElementById("cp_notice");
-   const dt = new Date();
-   footer.innerHTML = `${dt.getFullYear()} Ernest Osei`;
-</script>
+    <script type="text/babel">
+        const footer = document.getElementById("cp_notice");
+        const dt = new Date();
+        footer.innerHTML = `${dt.getFullYear()} Ernest Osei`;
+    </script>
 
 </body>
 
