@@ -21,7 +21,8 @@ body{
 
 .footer{
     font-size: 12px;
-    padding: 10px;
+    position: absolute;
+    bottom: 0;
     width: 100%;
 }
 
