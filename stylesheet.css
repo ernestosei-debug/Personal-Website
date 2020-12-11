@@ -13,6 +13,12 @@ body{
     position: sticky;
 }
 
+.name{
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 3s;
+}
+
 .footer{
     font-size: 12px;
     position: absolute;
