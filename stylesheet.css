@@ -6,12 +6,6 @@ body{
     box-sizing: border-box;
 }
 
-.name{
-    font-size: 2.5rem;
-    font-weight: bold;
-    animation: fadeIn 3s;
-}
-
 .hyperlink{
     display: flex;
     padding-top: 10px;
