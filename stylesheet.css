@@ -1,24 +1,29 @@
 /* @media */ 
-*{
+body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 0;
     box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 50px 350px 10px;
+    grid-template-areas:
+    "hyperlink"
+    "myClass"
+    "footer";
 }
 
 .hyperlink{
     display: flex;
-    padding-top: 10px;
+    grid-area: hyperlink;
     justify-content: space-evenly;
     position: sticky;
     align-items: center;
 }
 
 .name{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    animation: fadeIn 3s;
 }
 
 .desc{
@@ -29,9 +34,14 @@
 
 .footer{
     font-size: 12px;
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
     position: absolute;
     bottom: 0;
     width: 100%;
+
 }
 
 a{
@@ -65,4 +75,14 @@ a:hover{
         font-size: 24px;
     }
 
+}
+
+.myClass{
+    display: grid;
+    grid-area: myClass;
+    justify-items: center;
+    align-self: center;
+    line-height: 15px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }

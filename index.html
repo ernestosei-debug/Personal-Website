@@ -15,28 +15,40 @@
 
 <body>
     <div class="hyperlink">
-        <p style="font-size: 24px;font-weight: bold; padding: 10px; animation: fadeIn 3s;">Ernest Osei</p>
+        <p style="font-size: 22px;padding: 10px;">Ernest Osei</p>
         <a href="ernest-oseica.medium.com">Blog</a>
-        <a href="#">About Me</a>
+        <a href="https://github.com/ernestosei-debug">github</a>
     </div>
 
     <div class="name">
     </div>
 
-    <p>
-
+    <div class="myClass">
+    <p style="font-size: 50px; font-weight: bold;">
+        I Write Code.
     </p>
-
+    <p style="font-size: 18px;">
+        Software engineering is my favorite creative outlet.
+    </p>
+</div>
+    <!--
     <div class=links>
     <img src="GitHub-Mark-32px.png">
     <img src="LI-In-Bug.png" height="32px" width="40px">
     <p class="footer" id="cp_notice"></p>
     </div>
-
+-->
+<div class="footer">
+<p id="cp_notice">
+<p>ernest.oseica@gmail.com</p>
+</div>
+    
+</p>
     <script type="text/babel">
         const footer = document.getElementById("cp_notice");
         const dt = new Date();
-        footer.innerHTML = `${dt.getFullYear()} Ernest Osei`;
+        const name = "Ernest Osei"
+        footer.innerHTML = `${dt.getFullYear()} ${name}`;
     </script>
 
 </body>
