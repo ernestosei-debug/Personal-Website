@@ -11,10 +11,11 @@
     padding-top: 10px;
     justify-content: space-evenly;
     position: sticky;
+    align-items: center;
 }
 
 .name{
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
     padding: 10px;
     animation: fadeIn 3s;
@@ -22,6 +23,8 @@
 
 .desc{
     font-size: 24px;
+    animation-name: grow;
+    animation-duration: 1s;
 }
 
 .footer{
@@ -32,12 +35,17 @@
 }
 
 a{
+    color: grey;
     text-decoration: none;
-    font-size: 1rem;
+}
+
+.links:hover{
+    cursor: pointer;
 }
 
 a:hover{
-    color: orange;
+    color: black;
+    text-decoration: underline;
 }
 
 @keyframes fadeIn{
@@ -47,4 +55,14 @@ a:hover{
     100%{
         opacity: 1;
     }
+}
+
+@keyframes grow{
+    0%{
+        font-size: 0px;
+    }
+    100%{
+        font-size: 24px;
+    }
+
 }
