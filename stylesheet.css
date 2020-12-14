@@ -1,61 +1,57 @@
-/* @media */ 
+@media only screen and (min-width: 710px){
+
 body{
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin: 0;
-    box-sizing: border-box;
     display: grid;
-    grid-template-rows: 50px 350px 10px;
+    grid-template-rows: 50px 350px;
     grid-template-areas:
-    "hyperlink"
-    "myClass"
-    "footer";
+    "top"
+    "myClass";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.hyperlink{
+.top{
+    grid-area: top;
     display: flex;
-    grid-area: hyperlink;
     justify-content: space-evenly;
     position: sticky;
     align-items: center;
-}
-
-.name{
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.desc{
-    font-size: 24px;
-    animation-name: grow;
-    animation-duration: 1s;
-}
-
-.footer{
-    font-size: 12px;
-    display: flex;
     background-color: black;
     color: white;
+}
+
+.myClass{
+    grid-area: myClass;
+    display: grid;
+    justify-items: center;
+    align-self: center;
+    line-height: 10px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.myClass1{
+    font-size: 30px;
+    color: grey;
+}
+
+.bottom{
+    grid-area: bottom;
+    font-size: 12px;
+    display: flex;
     justify-content: space-around;
     position: absolute;
     bottom: 0;
     width: 100%;
-
 }
 
 a{
-    color: grey;
+    font-size: 18px;
+    color: coral;
     text-decoration: none;
-}
-
-.links:hover{
-    cursor: pointer;
-}
-
-a:hover{
-    color: black;
-    text-decoration: underline;
 }
 
 @keyframes fadeIn{
@@ -67,22 +63,71 @@ a:hover{
     }
 }
 
-@keyframes grow{
-    0%{
-        font-size: 0px;
-    }
-    100%{
-        font-size: 24px;
-    }
+}
 
+@media only screen and (max-width: 710px){
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50px 350px;
+    grid-template-areas:
+    "top"
+    "myClass";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    grid-area: top;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    align-items: center;
+    background-color: black;
+    color: white;
 }
 
 .myClass{
-    display: grid;
     grid-area: myClass;
+    display: grid;
     justify-items: center;
     align-self: center;
-    line-height: 15px;
     animation-name: fadeIn;
     animation-duration: 2s;
+    line-height: 10px;
+}
+
+.myClass1{
+    font-size: 18px;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+.bottom{
+    grid-area: bottom;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+a{
+    font-size: 20px;
+    color: coral;
+    text-decoration: none;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 }
