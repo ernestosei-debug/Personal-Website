@@ -1,59 +1,50 @@
-@media only screen and (min-width: 1200px){
-
+@media only screen and (min-width: 900px){
 body{
-    font-family: arial;
-    text-align: center;
     display: grid;
     grid-template-rows: 50px 350px;
     grid-template-areas:
     "top"
     "myClass";
+    font-family: arial;
+    text-align: center;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 .top{
-    grid-area: top;
     display: flex;
     justify-content: space-evenly;
-    position: sticky;
     align-items: center;
+    grid-area: top;
+    position: sticky;
 }
-
 .top p{
-    font-size: 15px;
+    font-size: 15px; /*My Name*/
 }
-
 .myClass{
-    grid-area: myClass;
     display: grid;
     justify-items: center;
     align-self: center;
+    grid-area: myClass;
     animation-name: fadeIn;
     animation-duration: 2s;
 }
-
 .myClass p{
     width: 60%;
 }
-
 .bottom{
-    grid-area: bottom;
-    font-size: 12px;
     display: flex;
     justify-content: space-around;
+    grid-area: bottom;
+    font-size: 12px;
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-
-a{
-    font-size: 20px;
+a{ /* Navigation Links */
+    font-size: 15px;
     text-decoration: none;
-    color:orange;
 }
-
 @keyframes fadeIn{
     0%{
         opacity: 0;
@@ -62,40 +53,38 @@ a{
         opacity: 1;
     }
 }
-
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 900px){
 body{
-    font-family: arial;
-    text-align: center;
     display: grid;
     grid-template-rows: 50px 350px;
     grid-template-areas:
     "top"
     "myClass";
+    font-family: arial;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 .top{
-    grid-area: top;
     display: flex;
     justify-content: space-evenly;
+    grid-area: top;
     position: sticky;
     align-items: center;
 }
 
 .top p{
-    font-size: 15px;
+    font-size: 20px; /*My Name*/
 }
 
 .myClass{
-    grid-area: myClass;
     display: grid;
     justify-items: center;
     align-content: center;
+    grid-area: myClass;
     animation-name: fadeIn;
     animation-duration: 2s;
 }
@@ -106,10 +95,10 @@ body{
 }
 
 .bottom{
-    grid-area: bottom;
-    font-size: 12px;
     display: flex;
     justify-content: space-around;
+    font-size: 12px;
+    grid-area: bottom;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -117,7 +106,6 @@ body{
 
 a{
     font-size: 20px;
-    color: orange;
     text-decoration: none;
 }
 
@@ -129,5 +117,4 @@ a{
         opacity: 1;
     }
 }
-
 }
