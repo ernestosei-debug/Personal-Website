@@ -67,7 +67,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
 .top{
     display: flex;
     justify-content: space-evenly;
@@ -75,11 +74,9 @@ body{
     position: sticky;
     align-items: center;
 }
-
 .top p{
     font-size: 20px; /*My Name*/
 }
-
 .myClass{
     display: grid;
     justify-items: center;
@@ -88,7 +85,6 @@ body{
     animation-name: fadeIn;
     animation-duration: 2s;
 }
-
 .myClass p{
     width: 80%;
     text-align: left;
@@ -103,12 +99,10 @@ body{
     bottom: 0;
     width: 100%;
 }
-
 a{
     font-size: 20px;
     text-decoration: none;
 }
-
 @keyframes fadeIn{
     0%{
         opacity: 0;
