@@ -1,7 +1,7 @@
-@media only screen and (min-width: 710px){
+@media only screen and (min-width: 1200px){
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: arial;
     text-align: center;
     display: grid;
     grid-template-rows: 50px 350px;
@@ -19,74 +19,10 @@ body{
     justify-content: space-evenly;
     position: sticky;
     align-items: center;
-    background-color: black;
-    color: white;
 }
 
-.myClass{
-    grid-area: myClass;
-    display: grid;
-    justify-items: center;
-    align-self: center;
-    line-height: 10px;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-}
-
-.myClass1{
-    font-size: 30px;
-    color: grey;
-}
-
-.bottom{
-    grid-area: bottom;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-a{
-    font-size: 18px;
-    color: coral;
-    text-decoration: none;
-}
-
-@keyframes fadeIn{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-}
-
-@media only screen and (max-width: 710px){
-body{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    display: grid;
-    grid-template-rows: 50px 350px;
-    grid-template-areas:
-    "top"
-    "myClass";
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.top{
-    grid-area: top;
-    display: flex;
-    justify-content: space-evenly;
-    position: sticky;
-    align-items: center;
-    background-color: black;
-    color: white;
+.top p{
+    font-size: 15px;
 }
 
 .myClass{
@@ -96,13 +32,10 @@ body{
     align-self: center;
     animation-name: fadeIn;
     animation-duration: 2s;
-    line-height: 10px;
 }
 
-.myClass1{
-    font-size: 18px;
-    animation-name: fadeIn;
-    animation-duration: 4s;
+.myClass p{
+    width: 60%;
 }
 
 .bottom{
@@ -117,7 +50,74 @@ body{
 
 a{
     font-size: 20px;
-    color: coral;
+    text-decoration: none;
+    color:orange;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+}
+
+@media only screen and (max-width: 1200px){
+body{
+    font-family: arial;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50px 350px;
+    grid-template-areas:
+    "top"
+    "myClass";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    grid-area: top;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    align-items: center;
+}
+
+.top p{
+    font-size: 15px;
+}
+
+.myClass{
+    grid-area: myClass;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.myClass p{
+    width: 80%;
+    text-align: left;
+}
+
+.bottom{
+    grid-area: bottom;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+a{
+    font-size: 20px;
+    color: orange;
     text-decoration: none;
 }
 
